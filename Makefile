@@ -2,7 +2,7 @@ CC		= gcc
 SRCS	= main.c\
 			src/udpService.c
 OBJS	= src/$(SRCS:.c=.o)
-EXEC	= bin/app
+EXEC	= lclp
 
 start:$(OBJS)
 	$(CC) -Wall -I include/ -o $(EXEC) $(OBJS)
