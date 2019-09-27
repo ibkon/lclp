@@ -10,3 +10,4 @@ start:$(OBJS)
 	$(CC) -Wall -I include/ -o $@ -c $<
 clean:
 	rm -rf $(OBJS)
+	rm -rf $(EXEC)

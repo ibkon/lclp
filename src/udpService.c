@@ -11,7 +11,7 @@ int udpService(uint16_t port){
     struct sockaddr_in  servaddr,client;
     char    buffer[0x1000];
     int     recvLen;
-    int     len=sizeof(client);
+    unsigned int     len=sizeof(client);
 
     sockfd  = socket(AF_INET,SOCK_DGRAM,0);
     memset(&servaddr,0,sizeof(servaddr));
@@ -32,4 +32,5 @@ int udpService(uint16_t port){
             write(2,buffer,recvLen+1);
         }
     }
+    return 0;
 }
