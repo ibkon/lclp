@@ -1,6 +1,9 @@
-CC		= gcc
+CC		= clang
 SRCS	= main.c\
-			src/udpService.c
+			src/udp_service.c\
+			src/tcp_service.c\
+			src/sha256.c
+			
 OBJS	= src/$(SRCS:.c=.o)
 EXEC	= lclp
 
