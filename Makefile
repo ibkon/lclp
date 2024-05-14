@@ -1,4 +1,4 @@
-CC		= clang
+CC		= gcc
 SRCS	= main.c\
 			src/udp_service.c\
 			src/tcp_service.c\
